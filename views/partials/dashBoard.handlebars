@@ -1,0 +1,14 @@
+{{#if posts}}
+{{#each posts as |post|}}
+<section class="card" id="{{post.id}}">
+  <a href="/post/{{id}}">
+    <h3 class="card-header">{{post.title}}</h3>
+    <div class="card-body">{{post.content}}</div>
+  </a>
+</section>
+{{/each}}
+{{else}}
+<h3>No post to read</h3>
+{{/if}}
+<button id="add-post" class="btn" data-uid="{{uid}}">Add a post</button>
+<script src="/js/dashBoard.js"></script>
