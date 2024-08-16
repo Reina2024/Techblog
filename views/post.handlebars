@@ -1,48 +1,54 @@
+
 {{#if loggedIn}}
-{{#if author}}
-<button id="edit-post" class="btn" data-pid="{{post.id}}">Edit post</button><br>
-{{/if}}
-<button id="add-comment" class="btn" data-pid="{{post.id}}">Add comment</button>
-<script src="/js/post.js"></script>
+  {{#if author}}
+    <button id="edit-post" class="btn" data-pid="{{post.id}}">Edit post</button><br>
+  {{/if}}
+  <button id="add-comment" class="btn" data-pid="{{post.id}}">Add comment</button>
+  <script src="/js/post.js"></script>
 {{else}}
-<h2><a href="/login">Login</a> Please login to veiw the page</h2>
-{{/if}}
+  <h2><a href="/login">Login</a> Please login to view the page</h2>
 {{/if}}
 
-{{#if post.Comments}}<h2>Comments</h2>{{/if}}
+{{#if post.Comments}}
+  <h2>Comments</h2>
+{{/if}}
+
 {{#each post.Comments as |comment|}}
-<div class="card" id="{{comment.id}}"> 
+  <div class="card" id="{{comment.id}}"> 
     <div class="card-footer">{{comment.User.username}} on {{last_updated comment.updatedAt}}</div>
     <div class="card-body">{{comment.content}}</div>
-</div>
+  </div>
 {{/each}}
 
 {{#if edit}}
-<h2>Edit a post</h2>
-<form class="form" id="post-form">
-  <div class="form-group">
-    <label for="post-title">Post title:</label>
-    <textarea class="form-input" id="post-title" rows="1">{{post.title}}</textarea>
-    <label for="post-content">Post content:</label>
-    <textarea class="form-input" id="post-content" rows="3">{{post.content}}</textarea>
-  </div>
-  <div class="form-group">
-    <button class="btn" id="edit-post" type="submit" data-pid="{{post.id}}">Submit</button>
-  </div>
-</form>
-<script src="/js/editPost.js"></script>
-
+  <h2>Edit a post</h2>
+  <form class="form" id="post-form">
+    <div class="form-group">
+      <label for="post-title">Post title:</label>
+      <textarea class="form-input" id="post-title" rows="1">{{post.title}}</textarea>
+      <label for="post-content">Post content:</label>
+      <textarea class="form-input" id="post-content" rows="3">{{post.content}}</textarea>
+    </div>
+    <div class="form-group">
+      <button class="btn" id="edit-post" type="submit" data-pid="{{post.id}}">Submit</button>
+    </div>
+  </form>
+  <script src="/js/editPost.js"></script>
 {{else}}
-
-<section class="card" id="{{post.id}}">
+  <section class="card" id="{{post.id}}">
     <h3 class="card-header">{{post.title}}</h3>
     <div class="card-body">{{post.content}}</div>
     <h5 class="card-footer">by {{post.User.username}} on {{last_updated post.updatedAt}}</h5>
-</section>
-{{#if post.Comments}}<h2>Comments</h2>{{/if}}
-{{#each post.Comments as |comment|}}
-<div class="card" id="{{comment.id}}"> 
-    <h5 class="card-footer">{{comment.User.username}} on {{last_updated comment.updatedAt}}</h5>
-    <div class="card-body">{{comment.content}}</div>
-</div>
-{{/each}}
+  </section>
+
+  {{#if post.Comments}}
+    <h2>Comments</h2>
+  {{/if}}
+
+  {{#each post.Comments as |comment|}}
+    <div class="card" id="{{comment.id}}"> 
+      <h5 class="card-footer">{{comment.User.username}} on {{last_updated comment.updatedAt}}</h5>
+      <div class="card-body">{{comment.content}}</div>
+    </div>
+  {{/each}}
+{{/if}}

@@ -10,8 +10,6 @@
 </head>
 
 <body>
-  <header>
-    <h1>Its a Tech Blog</h1>
   <nav>
     <a href="/">Home</a>
     <a href="/dashboard">Dashboard</a>
@@ -19,12 +17,13 @@
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <a href="/login">Login</a>
-    <a href="/signup">Sign Up</a>
     {{/if}}
   </nav>
+    <header>
+    <h1>It's a Tech Blog</h1>
   </header>
   <main>
-    <div class="home">
+    <div class="gallery">
       {{{body}}}
     </div>
   </main>
