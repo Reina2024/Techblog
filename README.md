@@ -64,7 +64,7 @@ Start the TechBlog by `npm run start` in the terminal.
 2. Go to http://localhost:3001 from a browser
 
 ## Screen Caps Of App
-Below is a video of the terminal usage. 
+Below is a images of the app in use. 
 
 ![Images](./images/Screenshot%202024-08-16%20at%206.32.40 PM.png)
 ![Images](./images/Screenshot%202024-08-16%20at%206.32.53 PM.png)
