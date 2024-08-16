@@ -13,7 +13,7 @@ router.get('/', auth, async (req, res) => {
 
     const posts = postData.map((post) => post.toJSON());
     console.log(posts);
-    res.render('dashBoard', {
+    res.render('dashboard', {
       posts,
       loggedIn: req.session.loggedIn,
       uid: req.session.uid

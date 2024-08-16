@@ -11,7 +11,7 @@ addComment.addEventListener('click', () => {
         if (response.ok) {
             document.location.replace(`/post/${addCommentComment.dataset.pid}`);
         } else {
-            alert('Comment Not Added. PLease Try Again');
+            alert('Comment Not Added. Please Try Again');
         }
     })
     .catch(err => {
