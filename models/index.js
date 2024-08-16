@@ -1,7 +1,7 @@
 // Import the User, Post, and Comment models
-const User = require('./User');
-const Post = require('./Post');
-const Comment = require('./Comment');
+const User = require('./UMG');
+const Post = require('./PMG');
+const Comment = require('./CMG');
 
 // Define a one-to-many relationship between Post and Comment
 // A Post can have many Comments
