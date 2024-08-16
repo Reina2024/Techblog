@@ -66,8 +66,20 @@ Start the TechBlog by `npm run start` in the terminal.
 ## Screen Caps Of App
 Below is a video of the terminal usage. 
 
- - Homepage
-![Home](./screenshot/Home.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.32.40 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.32.53 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.33.18 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.33.37 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.34.05 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.34.16 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.34.33 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.34.53 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.35.04 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.35.23 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.35.34 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.35.50 PM.png)
+![Images](./images/Screenshot%202024-08-16%20at%206.36.11 PM.png)
+
 
 ## Testing 
 
@@ -104,4 +116,4 @@ Some of the framework for this project was copied from activities completed in c
 
  - [Github Repository](https://github.com/Reina2024/Techblog)
 
--  [Deployed on Render] (link) 
+-  [Deployed on Render] (https://techblog-s7x4.onrender.com)
