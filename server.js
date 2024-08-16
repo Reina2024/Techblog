@@ -7,8 +7,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-// not sure I'll use this
-// const { clog } = require('./utils/clog');
+const { clog } = require('./utils/clog');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -34,8 +33,8 @@ const sess = {
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-// if using clog?
-// app.use(clog);
+
+app.use(clog);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
