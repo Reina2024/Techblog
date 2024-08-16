@@ -13,16 +13,6 @@
 {{/if}}
 
 
-{{#if post.Comments}}
-  <h2>Comments</h2>
-{{/if}}
-
-{{#each post.Comments as |comment|}}
-  <div class="card" id="{{comment.id}}"> 
-    <div class="card-footer">{{comment.User.username}} on {{last_updated comment.updatedAt}}</div>
-    <div class="card-body">{{comment.content}}</div>
-  </div>
-{{/each}}
 
 {{#if edit}}
   <h2>Edit a post</h2>
