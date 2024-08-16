@@ -1,14 +1,15 @@
 {{#if loggedIn}}
   {{#if author}}
-    <button id="edit-post" class="btn" data-pid="{{post.id}}">Edit post</button>
+    <button id="edit-post" class="btn" data-pid="{{post.id}}">Edit post</button><br>
+
     <button id="delete-post" class="btn" data-pid="{{post.id}}">Delete post</button><br>
   {{/if}}
   <button id="add-comment" class="btn" data-pid="{{post.id}}">Add comment</button>
   <script src="/js/post.js"></script>
 {{else}}
-  <h2>
+  <h4>
     Please login to view the page
-  </h2>
+  </h4>
   <a href="/login" class="btn">Login</a>
 {{/if}}
 
