@@ -29,6 +29,11 @@ const sess = {
       db: sequelize,
     }),
   };
+
+  hbs.handlebars.registerHelper('last_updated', function(date) {
+    return new Date(date).toLocaleDateString();
+  });
+
   app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
@@ -41,6 +46,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
+
+
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));
