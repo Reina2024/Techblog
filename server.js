@@ -16,19 +16,14 @@ const hbs = exphbs.create({ helpers });
 
 const sess = {
     secret: 'this is very secret',
-      
-    cookie: {
-      maxAge: 250000,
-      httpOnly: true,
-      secure: false,
-      sameSite: 'strict',
-    },
+    cookie: {},
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
       db: sequelize,
     }),
-  };
+  }; 
+    
 
   hbs.handlebars.registerHelper('last_updated', function(date) {
     return new Date(date).toLocaleDateString();
