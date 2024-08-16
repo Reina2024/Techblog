@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (confirm('Are you sure you want to delete this post?')) {
         try {
-          const response = await fetch(`/posts/${postId}`, {
+          const response = await fetch(`/api/posts/${postId}`, {
             method: 'DELETE',
           });
 
