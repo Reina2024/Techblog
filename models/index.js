@@ -1,6 +1,6 @@
-const User = require('./user');
-const Post = require('./post');
-const Comment = require('./comment');
+const User = require('./User');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
 Post.hasMany(Comment, {
     foreignKey: 'post_id',
@@ -29,4 +29,4 @@ Post.hasMany(Comment, {
     foreignKey: 'user_id',
   });
   
-  module.exports = { user, post, comment };
+  module.exports = { User, Post, Comment };
