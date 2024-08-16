@@ -1,5 +1,7 @@
+// Import the User model from the models directory
 const { User } = require('../models');
 
+// Array of user data to be seeded into the database
 const userData = [
   {
     username: 'Candy',
@@ -19,6 +21,8 @@ const userData = [
 
 ];
 
+// Function to seed user data into the database using bulkCreate
 const seedUsers = () => User.bulkCreate(userData);
 
+// Export the seedUsers function for use in other files (e.g., seeding scripts)
 module.exports = seedUsers;
