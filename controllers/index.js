@@ -8,10 +8,6 @@ const dashboardRoutes = require('./dashBoard-routes.js'); // Dashboard routes
 const postRoutes = require('./post-routes.js'); // Post-related routes
 const commentRoutes = require('./comment-routes.js'); // Comment-related routes
 
-const userRoutes = require('./api/user-routes');
-app.use('/api/users', userRoutes);
-
-
 // Define route paths and associate them with their respective route modules
 router.use('/comment', commentRoutes); 
 // All routes starting with '/comment' will use the routes defined in commentRoutes
