@@ -116,4 +116,4 @@ Some of the framework for this project was copied from activities completed in c
 
  - [Github Repository](https://github.com/Reina2024/Techblog)
 
--  [Deployed on Render] (https://techblog-s7x4.onrender.com)
+-  [Deployed on Render] (https://techblog-f2yb.onrender.com)
